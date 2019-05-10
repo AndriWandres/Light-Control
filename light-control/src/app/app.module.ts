@@ -3,6 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { SidenavModule } from './sidenav/sidenav.module';
+import { HeaderModule } from './header/header.module';
+import { MaterialModule } from './shared/material.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +15,11 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    HeaderModule,
+    SidenavModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

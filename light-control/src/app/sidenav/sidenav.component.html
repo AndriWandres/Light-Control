@@ -1,0 +1,20 @@
+
+<mat-sidenav-container hasBackdrop="false">
+  <mat-sidenav fixedInViewport="true" fixedTopGap="64" mode="over">
+    <mat-toolbar color="warn">
+      <mat-toolbar-row>
+        <span>Side Navigation</span>
+        <span class="spacer"></span>
+        <button mat-icon-button (click)="sidenav.close()">
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    <section>
+      Sidenav Content
+    </section>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>

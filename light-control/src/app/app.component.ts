@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'light-control';
+  items = [
+    'Abteilung 1', 'Abteilung 2', 'Abteilung 3',
+    'Abteilung 4', 'Abteilung 5', 'Abteilung 6'
+  ];
 }

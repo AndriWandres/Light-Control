@@ -1,0 +1,37 @@
+@import '~@angular/material/theming';
+
+mat-card.toggler {
+  flex: 1 auto;
+  cursor: pointer;
+  transition:
+  box-shadow ease-in 200ms,
+    background-color ease-in 200ms;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  &:hover {
+    @include mat-elevation(2);
+    background-color: #f8f8f8;
+  }
+}
+
+mat-slide-toggle {
+  margin-right: 100px;
+}
+
+mat-card.map {
+  margin: 0 15px;
+  width: 30%;
+  height: 100%;
+  flex: 1 auto;
+}
+
+div.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  height: 50%;
+}
